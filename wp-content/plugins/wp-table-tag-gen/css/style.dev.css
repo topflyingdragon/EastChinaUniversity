@@ -1,0 +1,181 @@
+/*
+ * WP Table Tag Gen
+ * Author : Shunsuke KUSAKABE
+ * Copyright (c) Shunsuke KUSAKABE
+ */
+
+@charset "UTF-8";
+
+.ui-selectable-helper {
+	position: absolute;
+	z-index: 100;
+	border: 1px dotted black;
+}
+
+#generator {
+	margin-bottom: 10px;
+}
+
+#generator #tag-wrapper {
+	position: relative;
+}
+
+#generator #ttg-header {
+	border: solid #dedede;
+	border-width: 0 0 1px;
+	background: #f5f5f5;
+	padding: 10px 0;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+
+#generator #ttg-header div.dashicons-editor-help {
+	position: relative;
+	vertical-align: middle;
+	color: #aaa;
+	cursor: pointer;
+}
+
+#generator .dashicons-editor-help:hover {
+	color: #595959;
+}
+
+#generator .hint {
+	display: none;
+	position: absolute;
+	top: 30px;
+	left: -105px;
+	width: 210px;
+	padding: 10px;
+	background: #333;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 11px;
+	text-align: left;
+}
+
+#generator .hint:after {
+	content: "";
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	margin-left: -5px;
+	width: 0px;
+	border: solid;
+	border-width: 10px 5px;
+	border-color: transparent transparent #333;
+}
+
+#generator .help {
+	position: relative;
+	display: inline-block;
+}
+
+#generator .help:hover .hint {
+	display: block;
+}
+
+#generator #output-chars,
+#generator #output-class {
+	display: none;
+}
+
+#generator #insert,
+#generator #merge {
+	margin-left: 15px;
+}
+
+#generator .message {
+	margin-bottom: 40px;
+}
+
+#generator .message p {
+	display: none;
+	text-align: center;
+	padding: 10px 0;
+	margin: 0;
+	background: #fff;
+	border: solid #dedede;
+	border-width: 0 0 1px;
+}
+
+#generator .message .default {
+	display: block;
+}
+
+#generator .message .alert {
+	background: #ffe5e5;
+	border-color: #f50000;
+	border-width: 1px 0;
+	color: #f50000;
+	font-weight: bold;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	/* hack for webkit */
+	#generator button {
+		padding: 2px 3px;
+	}
+}
+
+#generator .button {
+	cursor: pointer;
+}
+
+#generator table , #generator td, #generator th {
+	border: 1px solid #595959;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+#generator table {
+	margin: 0 auto;
+	cursor: crosshair;
+}
+
+#generator td,#generator  th {
+	padding: 3px;
+	width: 40px;
+	height: 25px;
+}
+
+#generator th {
+	background: #e0e0e0;
+}
+
+#generator td.ui-selected {
+	background: #ff8080;
+}
+
+#generator td.ui-selecting {
+	background: #FFCCCC;
+}
+
+#generator th.ui-selected {
+	background: #80bfff;
+}
+
+#generator th.ui-selecting {
+	background: #E6F2FF;
+}
+
+#generator textarea {
+	margin: 0 5px;
+	width: 296px;
+}
+
+#generator input[type="number"] {
+	width: 3em;
+}
+
+#generator textarea {
+	width: 150px;
+}
+
+#generator i.dashicons.dashicons-undo,
+#generator i.dashicons.dashicons-redo {
+	font-size: 15px;
+	vertical-align: bottom;
+}
+
