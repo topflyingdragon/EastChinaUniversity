@@ -17,14 +17,7 @@
                     <?php while (have_posts()) : the_post(); ?>
                     <div class="blog-info">
                         <div class="row">
-                        <?php if ( has_post_thumbnail() ) : ?>
-                            <div class="col-md-4">
-                                <?php the_post_thumbnail('thumbnail', 'style=width:100%;height:auto;'); ?>
-                            </div>
-                            <div class="col-md-8">
-                        <?php else: ?>
                             <div class="col-md-12">
-                        <?php endif; ?>
                                 <h4><a href="<?php the_permalink() ?>"><?php the_title();?></a></h4>
                                 <p class="pub-date"><i class="fa fa-calendar"></i> <?php echo get_the_date(); ?></p>
                                 <div class="blog-info-text">
@@ -34,7 +27,6 @@
                                         ?>
                                     </p>
                                 </div>
-
                             </div>
                         </div>
                     </div>
