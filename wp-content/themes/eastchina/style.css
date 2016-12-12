@@ -443,7 +443,7 @@ p.aut{
     width: 130px !important;
     height: 130px;
     margin-right: 2em;
-    background: url("images/blur_circle.png");
+    background: url("images/blur_circle.png") no-repeat;
     background-size: cover;
     font-family: 'Raleway', sans-serif;
 }

@@ -22,6 +22,10 @@
     <!--[if lt IE 9]>
     <script src="/EastChinaUniversity/wp-content/themes/eastchina/js/html5shiv.min.js"></script>
     <script src="/EastChinaUniversity/wp-content/themes/eastchina/js/respond.min.js"></script>
+    <script src="/EastChinaUniversity/wp-content/themes/eastchina/css/bootstrap-ie7.css"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+
     <![endif]-->
 
     <?php if ( is_singular() ){ ?>
