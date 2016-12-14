@@ -1134,7 +1134,7 @@ ol.breadcrumb li a {
     overflow: hidden;
 }
 .blog-info-text a img {
-    width: 100%;
+    width: auto;
     height: auto;
 }
 .blog-info-text p {
@@ -1322,9 +1322,7 @@ a.list-group-item:hover, a.list-group-item:focus {
 .sngl-title {
     margin-bottom: 5em;
 }
-.single-page-left  img {
-    width: 100%;
-}
+
 .single-page-info h5 {
     font-size: 20px;
     font-weight: bold;
@@ -2749,3 +2747,10 @@ li.cat-item.current-cat .children .cat-item a:hover{
 .map-nav li.active a{
     border-top: 2px solid #6091ba !important;
 }
+
+img.alignright {float:right; margin:0 0 1em 1em}
+img.alignleft {float:left; margin:0 1em 1em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+a img.alignright {float:right; margin:0 0 1em 1em}
+a img.alignleft {float:left; margin:0 1em 1em 0}
+a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
