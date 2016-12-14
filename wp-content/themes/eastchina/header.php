@@ -20,9 +20,9 @@
     <script>$=jQuery;</script>
 
     <!--[if lt IE 9]>
-    <script src="/EastChinaUniversity/wp-content/themes/eastchina/js/html5shiv.min.js"></script>
-    <script src="/EastChinaUniversity/wp-content/themes/eastchina/js/respond.min.js"></script>
-    <script src="/EastChinaUniversity/wp-content/themes/eastchina/css/bootstrap-ie7.css"></script>
+    <script src="/wp-content/themes/eastchina/js/html5shiv.min.js"></script>
+    <script src="/wp-content/themes/eastchina/js/respond.min.js"></script>
+    <script src="//wp-content/themes/eastchina/css/bootstrap-ie7.css"></script>
     <![endif]-->
     <!--[if lt IE 8]>
 
@@ -36,7 +36,7 @@
 <div class="header">
     <div class="container">
         <div class="header-left">
-            <a href="/EastChinaUniversity/">
+            <a href="/">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/title/title_logo.png">
             </a>
         </div>
