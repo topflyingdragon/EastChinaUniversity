@@ -110,9 +110,8 @@ function get_sidebar( $name = null ) {
 	 *
 	 * @param string $name Name of the specific sidebar file to use.
 	 */
-	do_action( 'get_sidebar', $name );
-
-	$templates = array();
+    do_action( 'get_sidebar', $name );
+    $templates = array();
 	$name = (string) $name;
 	if ( '' !== $name )
 		$templates[] = "sidebar-{$name}.php";

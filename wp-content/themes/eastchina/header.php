@@ -66,19 +66,6 @@
 <div class="banner">
 <?php else : ?>
 <div class="banner1">
-    <script type="text/javascript">
-        $(function(){
-            var p = -Math.floor($(window).width()/12);
-            $(".banner1").css({'background-position': "0px "+p+"px"});
-            window.onscroll = function () {
-                if($(window).width()>=800) {
-                    var st = document.documentElement.scrollTop || document.body.scrollTop;
-                    var y = p - st;
-                    $(".banner1").css({'background-position': "0px " + y + "px"});
-                }
-            }
-        });
-    </script>
 <?php endif; ?>
     <div class="nav-container">
         <div class="container">

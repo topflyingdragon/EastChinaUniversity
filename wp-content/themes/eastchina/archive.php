@@ -3,6 +3,7 @@
 $categories = get_the_category();
 $slug = $categories[0]->slug;
 $url = $categories[0]->category_description;
+
 if(trim($url) != ""){ ?>
 	<script> window.top.location.href='<?php echo $url; ?>'</script>
 <?php } ?>
@@ -20,7 +21,9 @@ if(trim($url) != ""){ ?>
         </div>
 
         <div class="col-md-4 single-page-right">
-            <?php get_sidebar(); ?>
+            <?php
+            get_sidebar();
+            ?>
         </div>
 
         <div class="clearfix"> </div>

@@ -165,7 +165,7 @@ register_sidebar(array(
     'description' => '右边栏小工具一',
     'before_widget' => '<div id="%1$s" class="list-group %2$s">',
     'after_widget' => '</div>',
-    'before_title' => '<h4>',
+    'before_title' => '<h4 style="display: none;">',
     'after_title' => '</h4>',
 ));
 

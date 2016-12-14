@@ -139,7 +139,8 @@ button.btn.btn-default {
 .banner{
 }
 .banner1{
-    background:url(./images/banner2.jpg) no-repeat 0px -300px;
+    background:url(./images/banner2.jpg);
+    background-position: center center;
     background-size:cover;
     -webkit-background-size:cover;
     -moz-background-size:cover;
@@ -1134,6 +1135,7 @@ ol.breadcrumb li a {
 }
 .blog-info-text a img {
     width: 100%;
+    height: auto;
 }
 .blog-info-text p {
     margin: 0 0 1.5em;
@@ -1652,8 +1654,10 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
     background-color: #fff;
     border: 1px solid #ddd;
 }
-.list-group .current-cat-parent {
-
+.list-group .cat-item.current-cat-ancestor a{
+    font-size: 13pt;
+    font-weight: bold;
+    color: #51768F;
 }
 .list-group .cat-item a {
     display: block;
@@ -1665,12 +1669,6 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
     border: none;
 
 }
-.list-group .cat-item:first-child a{
-    font-size: 13pt;
-    font-weight: bold;
-    color: #51768F;
-}
-
 .list-group .cat-item:last-child {
     margin-bottom: 0;
     border-bottom-right-radius: 4px;
@@ -1697,6 +1695,46 @@ li.cat-item.current-cat {
 }
 li.cat-item.current-cat a {
     color: #fff;
+}
+.cat-item-11 a{
+    font-size: 20px;
+    font-weight: bold;
+}
+ul.children .cat-item {
+    border: none;
+}
+ul.children .cat-item:first-child{
+    padding-left: 35px;
+    background: transparent;
+}
+ul.children .cat-item:last-child{
+    padding-left: 35px;
+    background: transparent;
+}
+ul.children .cat-item:first-child:hover,
+ul.children .cat-item:last-child:hover{
+    background: transparent;
+}
+ul.children .cat-item a{
+    color: #aaa;
+}
+ul.children .cat-item:first-child a:hover,
+ul.children .cat-item:last-child a:hover{
+    color: white;
+    background: transparent;
+}
+li.cat-item .children{
+    display: none;
+}
+li.cat-item.current-cat .children .cat-item a{
+    color: #aaa;
+}
+li.cat-item.current-cat .children .cat-item a:hover{
+    color: #fff;
+}
+.list-group .cat-item.current-cat-ancestor .children a{
+    font-size: 12pt !important;
+    font-weight: 100 !important;
 }
 
 /* //Rectangle In */
@@ -2686,10 +2724,6 @@ li.cat-item.current-cat a {
         height: 350px;
     }
 }
-.cat-item-11 a{
-    font-size: 20px;
-    font-weight: bold;
-}
 #menu-item-61 a{
     font-size: 14pt !important;
     font-weight: bold;
@@ -2706,11 +2740,6 @@ li.cat-item.current-cat a {
 }
 .weixin-icon:hover{
     overflow: visible;
-}
-.cat-item.cat-item-2.current-cat{
-    z-index: 0;
-    background-color: #fff;
-    border-color: #fff;
 }
 .map-tab{
     border-left: 1px solid #DDDDDD;
