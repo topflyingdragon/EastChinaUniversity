@@ -1721,9 +1721,6 @@ ul.children .cat-item:last-child a:hover{
     color: white;
     background: transparent;
 }
-li.cat-item .children{
-    display: none;
-}
 li.cat-item.current-cat .children .cat-item a{
     color: #aaa;
 }
@@ -2749,8 +2746,8 @@ li.cat-item.current-cat .children .cat-item a:hover{
 }
 @media (max-width:1000px){
     .blog-info img{
-        width: 100%;
-        height: auto;
+        width: 100% !important;
+        height: auto !important;
     }
 }
 img.alignright {float:right; margin:0 0 1em 1em}
