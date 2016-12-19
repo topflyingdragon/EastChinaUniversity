@@ -9,7 +9,7 @@
                     <h4><a href="<?php echo home_url('/'); ?>category/study_abroad/study_abroad_application/">留学申请</a></h4>
                     <?php
                     // 办理指南
-                    
+
                     $args = array(
                         'posts_per_page'   => 5,
                         'category_name'    => 'study_abroad_application',

@@ -2747,10 +2747,29 @@ li.cat-item.current-cat .children .cat-item a:hover{
 .map-nav li.active a{
     border-top: 2px solid #6091ba !important;
 }
-
+@media (max-width:1000px){
+    .blog-info img{
+        width: 100%;
+        height: auto;
+    }
+}
 img.alignright {float:right; margin:0 0 1em 1em}
 img.alignleft {float:left; margin:0 1em 1em 0}
 img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 a img.alignright {float:right; margin:0 0 1em 1em}
 a img.alignleft {float:left; margin:0 1em 1em 0}
 a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+
+.blog-info.list{
+    margin-top: 20px;
+}
+.blog-info.list .list-title{
+    color: #51768F;
+    font-weight: bold;
+    font-size: 13pt;
+}
+.blog-info.list .list-date{
+    color: #9c9c9c;
+    font-weight: bold;
+    font-size: 12pt;
+}
